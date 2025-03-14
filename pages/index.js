@@ -8,10 +8,7 @@ export default function Home() {
   const [location, setLocation] = useState('')
   
   const getWeather = async() => {
-    // The API key below may have expired. Go to WeatherAPI.com to get your free API key.
-    // http://api.weatherapi.com/v1/current.json?key=19a08913994b404587152504230704&q=Paris
-    const api_key = '19a08913994b404587152504230704'
-    const api_url = `http://api.weatherapi.com/v1/current.json?key=${api_key}&q=${location}`
+    const api_url = `${process.env.NEXT_PUBLIC_WEATHER_API_URL}current.json?key=${process.env.NEXT_PUBLIC_WEATHER_API_KEY}&q=${location}`
     
     if (location) {
       try {
@@ -102,7 +99,7 @@ export default function Home() {
         <div className="flex justify-center p-20 pt-20 mt-20">
           <div className="flex bg-white rounded-3xl px-4 py-1 color-gray opacity-90 hover:scale-150 transition-all">
             <img className="codrkai-profile object-cover rounded-full w-16 h-16 m-2" src="https://avatars.githubusercontent.com/u/52646391?v=4" alt="codrkai" />
-            <div className="text-sm text-gray-400 pt-3">Codr Kai<br />Tutorials<br />&copy; 2023</div>
+            <div className="text-sm text-gray-400 pt-3">Codr Kai<br />Tutorials</div>
           </div>
         </div>
     </>

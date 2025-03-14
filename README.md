@@ -1,17 +1,22 @@
-This is a simple weather app created using Next JS with Tailwind CSS. It connects to the free WeatherAPI.com website for it's data. Get your free API Key at the website.
+## Weather App
+A simple weather app created using NextJS with TailwindCSS that connects to WeatherAPI.com for data.
 
-## Getting Started
+##### NextJS v13
 
-First, run the development server:
+##### Weather API
+    Go to https://weatherapi.com to get your FREE API key.
 
+##### RENAME .env-example TO .env.local
+
+## Installation
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+    npm install
+    npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+##### Screeenshot
+<img src="/public/images/screenshot.jpg" alt="weather app screenshot" />
+
+#### Demo
